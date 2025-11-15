@@ -1,0 +1,310 @@
+/* светлая тема */
+body:not(.dark) .logreg-container form,
+body:not(.dark) .alert,
+body:not(.dark) .addform-form,
+body:not(.dark) .categories-card-container,
+body:not(.dark) .deletemodal-content,
+body:not(.dark) .openrecipe-form
+{
+    border: 1px solid #0003;
+    background-color: #fff;
+}
+body:not(.dark) .logreg-input input {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #0003;
+}
+body:not(.dark) .logreg-about-text,
+body:not(.dark) .alert-info-text,
+body:not(.dark) .recipes-card-container-info-description span,
+body:not(.dark) .version,
+body:not(.dark) .profile-title-age,
+body:not(.dark) .openrecipe-form-cuptime-item span
+{
+    color: #0005;
+}
+body:not(.dark) .header_content,
+body:not(.dark) .profile-content,
+body:not(.dark) .settings_content
+{
+    background-color: #fff8;
+    border: 1px solid #0002;
+}
+body:not(.dark) .header_menu-li.active {
+    background-color: #bb6bd350;
+}
+body:not(.dark) .none-content span,
+body:not(.dark) .recipes-card-container,
+body:not(.dark) .settings_content-contents-card-item-value button
+{
+    background-color: #0001;
+}
+body:not(.dark) .recipes-card-container-info-title span,
+body:not(.dark) .addform-title,
+body:not(.dark) .categories-card-container span,
+body:not(.dark) .profile-info-recipe-category-item-text,
+body:not(.dark) .settings_content-title,
+body:not(.dark) .settings_content-tabs-item,
+body:not(.dark) .settings_content-contents-card-item-title,
+body:not(.dark) .settings_content-contents-card-item-value span,
+body:not(.dark) .accordion-header span,
+body:not(.dark) .accordion-body p,
+body:not(.dark) .logreg-about-fogget,
+body:not(.dark) .header_logo span,
+body:not(.dark) .header_menu-li,
+body:not(.dark) .profile-info-settings-item-title,
+body:not(.dark) .profile-info-settings-item-button-part,
+body:not(.dark) .openrecipe-form-title,
+body:not(.dark) .openrecipe-form-description
+{
+    color: #000;
+}
+body:not(.dark) .recipes-card-container-info-text span {
+    color: #0007;
+}
+body:not(.dark) .profile-info-recipe-category-item {
+    border: 1px solid #0001;
+}
+body:not(.dark) .profile-title-image {
+    background-color: #0002;
+}
+body:not(.dark) .settings_content-tabs-item.active {
+    color: #fff;
+}
+body:not(.dark) .settings_content-contents-card {
+    box-shadow: inset 0 0 5px #0003;
+}
+body:not(.dark) .accordion-header {
+    background: linear-gradient(-23deg, #bb6bd350, #bb6bd300);
+}
+body:not(.dark) .accordion-body {
+    border-left: 1px solid #bb6bd330;
+    border-right: 1px solid #bb6bd330;
+    border-bottom: 1px solid #bb6bd330;
+}
+body:not(.dark) .settings_content-contents-card-item.image .settings_content-contents-card-item-value {
+    background-color: #0003;
+    color: #fff;
+}
+body:not(.dark) .settings_content-contents-card-item-title.about {
+    background-color: #fff;
+}
+body:not(.dark) .settings_content-contents-card-item-value.about,
+body:not(.dark) .addform-form-input
+{
+    border: 1px solid #0003;
+}
+body:not(.dark) .settings_content-contents-card-item-value.about.none span {
+    color: #0005;
+}
+body:not(.dark) .profile-description-title {
+    background-color: #fff;
+    color: #0007;
+}
+body:not(.dark) .profile-description-text {
+    border: 1px solid #0003;
+    color: #000;
+}
+body:not(.dark) .addform-form-input::placeholder,
+body:not(.dark) .addform-form-table td input::placeholder,
+body:not(.dark) .addform-form-category option:nth-child(1)
+{
+    color: #0003;
+}
+body:not(.dark) .recipes-card-container-info-text-item span {
+    color: #0005;
+}
+body:not(.dark) .addform-form-table thead,
+body:not(.dark) .openrecipe-form-table thead
+{
+    background-color: #bb6bd3;
+    color: #fff;
+}
+body:not(.dark) .addform-form-table tbody tr td,
+body:not(.dark) .addform-form-table tbody tr td input,
+body:not(.dark) .openrecipe-form-table tbody tr td 
+{
+    color: #000;
+}
+body:not(.dark) .btn-back {
+    background-color: #fff;
+}
+body:not(.dark) .remove-btn {
+    background-color: #0001;
+    color: #000;
+}
+body:not(.dark) .profile-info-settings-item-button {
+    background-color: #0002;
+}
+body:not(.dark) .categories-card-container button {
+    background-color: #0001;
+}
+
+
+
+
+/* тёмная тема */
+body.dark {
+    background-color: #3a3a3a;
+}
+body.dark .logreg-container form,
+body.dark .alert,
+body.dark .addform-form,
+body.dark .categories-card-container,
+body.dark .deletemodal-content,
+body.dark .openrecipe-form
+{
+    border: 1px solid #fff3;
+    background-color: #fff1;
+}
+body.dark .logreg-input input {
+    background-color: #fff1;
+    color: #fff;
+    border: 1px solid #fff3;
+}
+body.dark .logreg-about-text,
+body.dark .alert-info-text,
+body.dark .recipes-card-container-info-description span,
+body.dark .version,
+body.dark .profile-title-age,
+body.dark .openrecipe-form-cuptime-item span
+{
+    color: #fff5;
+}
+body.dark .header_content,
+body.dark .profile-content,
+body.dark .settings_content
+{
+    background-color: #fff3;
+    border: 1px solid #fff1;
+}
+body.dark .header_menu-li.active {
+    background-color: #bb6bd380;
+}
+body.dark .none-content span,
+body.dark .recipes-card-container,
+body.dark .settings_content-contents-card-item-value button
+{
+    background-color: #fff2;
+}
+body.dark .recipes-card-container-info-title span,
+body.dark .addform-title,
+body.dark .categories-card-container span,
+body.dark .profile-info-recipe-category-item-text,
+body.dark .settings_content-title,
+body.dark .settings_content-tabs-item,
+body.dark .settings_content-contents-card-item-title,
+body.dark .settings_content-contents-card-item-value span,
+body.dark .accordion-header span,
+body.dark .accordion-body p,
+body.dark .logreg-about-fogget,
+body.dark .header_logo span,
+body.dark .header_menu-li,
+body.dark .profile-title-username,
+body.dark .profile-info-settings-item-title,
+body.dark .profile-info-settings-item-button-part,
+body.dark .openrecipe-form-title,
+body.dark .openrecipe-form-description
+{
+    color: #fff;
+}
+body.dark.recipes-card-container-info-text span {
+    color: #fff7;
+}
+body.dark .profile-info-recipe-category-item {
+    border: 1px solid #fff1;
+}
+body.dark .profile-title-image {
+    background-color: #fff2;
+}
+body.dark .settings_content-tabs-item.active {
+    color: #fff;
+}
+body.dark .settings_content-contents-card {
+    box-shadow: inset 0 0 5px #fff3;
+}
+body.dark .accordion-header {
+    background: linear-gradient(-23deg, #bb6bd350, #bb6bd300);
+}
+body.dark .accordion-body {
+    border-left: 1px solid #bb6bd330;
+    border-right: 1px solid #bb6bd330;
+    border-bottom: 1px solid #bb6bd330;
+}
+body.dark .settings_content-contents-card-item.image .settings_content-contents-card-item-value {
+    background-color: #fff3;
+    color: #fff;
+}
+body.dark .settings_content-contents-card-item-title.about {
+    background-color: #616161;
+}
+body.dark .settings_content-contents-card-item-value.about,
+body.dark .addform-form-input
+{
+    border: 1px solid #fff3;
+}
+body.dark .settings_content-contents-card-item-value.about.none span {
+    color: #fff5;
+}
+body.dark .profile-description-title {
+    background-color: #616161;
+    color: #fff7;
+}
+body.dark .profile-description-text {
+    border: 1px solid #fff3;
+    color: #fff;
+}
+body.dark .addform-form-input::placeholder,
+body.dark .addform-form-table td input::placeholder,
+body.dark .addform-form-category option:nth-child(1)
+{
+    color: #fff3;
+}
+body.dark .recipes-card-container-info-text-item span {
+    color: #fff7;
+}
+body.dark .logreg-image img,
+body.dark .password-toggle-btn img,
+body.dark .header_logo img,
+body.dark .header_profile img,
+body.dark .recipes-card-container-info-text-item img,
+body.dark .btn-back img,
+body.dark .btn-settings img,
+body.dark .settings_content-contents-card-item-value span img,
+body.dark .openrecipe-form-cuptime-item img
+{
+    filter: invert(100%);
+}
+body.dark .addform-form-input {
+    background-color: #fff1;
+    color: #fff;
+}
+body.dark .addform-form-category,
+body.dark .remove-btn
+{
+    color: #fff;
+}
+body.dark .addform-form-category option {
+    color: #fff;
+    background-color: #3A3A3A;
+}
+body.dark .addform-form-table thead,
+body.dark .openrecipe-form-table thead
+{
+    background-color: #bb6bd380;
+    color: #fff;
+}
+body.dark .addform-form-table tbody tr td,
+body.dark .addform-form-table tbody tr td input,
+body.dark .openrecipe-form-table tbody tr td 
+{
+    color: #fff;
+}
+body.dark .btn-back,
+body.dark .remove-btn,
+body.dark .profile-info-settings-item-button {
+    background-color: #fff2;
+}
+body.dark .categories-card-container button {
+    background-color: #fff1;
+}

@@ -1,0 +1,270 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  position: relative;
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+@font-face {
+  font-family: 'Ribeye';
+  src: url('./assets/fonts/Ribeye/Ribeye-Regular.ttf');
+}
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+body {
+  font-family: 'Roboto';
+}
+
+.alert {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border-radius: 10px;
+  user-select: none;
+  transform: translateX(300px);
+  transition: all .3s ease;
+  animation: popInOut 3s forwards;
+  width: 100%;
+  max-width: 300px;
+  z-index: 110;
+}
+@keyframes popInOut {
+  0% {
+    transform: translateX(150%); /* Начальная позиция */
+  }
+  10% {
+    transform: translateX(-10px); /* Ударяемся влево */
+  }
+  20% {
+    transform: translateX(0); /* Возвращаемся на 0 */
+  }
+  80% {
+    transform: translateX(0); /* Возвращаемся на 0 */
+  }
+  90% {
+    transform: translateX(-10px); /* Ударяемся влево */
+  }
+  100% {
+    transform: translateX(150%); /* Убираемся вправо */
+  }
+}
+.alert-image {
+  height: 40px;
+  width: 40px;
+  overflow: hidden;
+}
+.alert-image img {
+  height: 40px;
+  width: 40px;
+}
+.alert-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  width: 200px;
+}
+.alert-info-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.alert.alert-success .alert-info-title {
+  color: #bb6bd3;
+}
+.alert.alert-error .alert-info-title {
+  color: #f76c6c;
+}
+.alert-info-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 5px;
+  bottom: 0;
+  top: 0;
+  width: 35px;
+  height: 100%;
+  overflow: hidden;
+  border: none;
+  background-color: transparent;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.password-toggle-btn img {
+  width: 100%;
+}
+.btn {
+  background-color: #bb6bd3;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-add {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-add span {
+  background-color: #bb6bd3;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px;
+  cursor: pointer;
+}
+.btn-add span img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+.none-content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.none-content span {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 14px;
+  text-align: center;
+  user-select: none;
+}
+
+.btn-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.btn-back img {
+  width: 30px;
+  height: auto;
+}
+
+.message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100dvh;
+  font-size: 16px;
+  font-weight: 600;
+}
+.message.loading {
+  color: #bb6bd3;
+}
+.message.error {
+  color: red;
+}
+
+.deletemodal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 120;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0007;
+}
+.deletemodal-content {
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.deletemodal-content p {
+  font-size: 16px;
+}
+.deletemodal-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.deletemodal-btns button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+.deletemodal-btns .confirm {
+  background-color: #bb6bd3;
+  color: #fff;
+}
+
+@media ( min-width: 769px ) {
+  .container {
+    margin-top: 60px;
+  }
+}
+@media ( max-width: 768px ) {
+  .container {
+    margin-top: 40px;
+  }
+  .btn-add span {
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+  }
+  .btn-add span img {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media ( max-width: 400px ) {
+  .container {
+    margin-top: 20px;
+  }
+  .none-content {
+    margin-top: 80px;
+  }
+}

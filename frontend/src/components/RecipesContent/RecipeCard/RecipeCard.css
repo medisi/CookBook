@@ -1,0 +1,103 @@
+.recipes-card-container {
+    width: 100%;
+    /* max-height: 250px; */
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.recipes-card-container-image {
+    width: 100%;
+    height: 100%;
+    min-height: 100px;
+    max-height: 120px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.recipes-card-container-image img {
+    object-fit: cover;
+    width: 100%;
+    transition: all .4s ease;
+}
+.recipes-card-container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 15px 15px;
+    height: 100%;
+    justify-content: space-between;
+}
+.recipes-card-container-info-title {
+    width: 100%;
+}
+.recipes-card-container-info-title span {
+    width: 100%;
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  /* Ограничиваем до 2 строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* Добавляем ... */
+    line-height: 1.2;  /* Настройте под дизайн (например, 1.2 для 14px шрифта) */
+    max-height: 2.4em;  /* 2 строки * 1.2 line-height */
+}
+.recipes-card-container-info-description {
+    height: 35px;
+    overflow: hidden;
+}
+.recipes-card-container-info-description span {
+    font-size: 14px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;  /* Ограничиваем до 2 строк */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;  /* Добавляем ... */
+    line-height: 1.2;  /* Настройте под дизайн (например, 1.2 для 14px шрифта) */
+    max-height: 2.4em;  /* 2 строки * 1.2 line-height */
+}
+.recipes-card-container-info-text {
+    display: flex;
+    justify-content: space-between;
+}
+.recipes-card-container-info-text-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.recipes-card-container-info-text-item img {
+    height: 25px;
+    width: auto;
+}
+.recipes-card-container-info-text-item span {
+    font-size: 14px;
+    font-weight: 300;
+    opacity: .5;
+}
+.recipes-card-container:hover .recipes-card-container-image img {
+    transform: scale(1.03);
+}
+
+@media ( max-width: 540px ) {
+    .recipes-card-container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 5px;
+    }
+    .recipes-card-container-image {
+        max-height: 100%;
+    }
+    .recipes-card-container-image img {
+        height: 100%;
+    }
+    .recipes-card-container-info {
+        gap: 10px;
+        padding: 15px;
+        height: 100%;
+        justify-content: space-between;
+    }
+}

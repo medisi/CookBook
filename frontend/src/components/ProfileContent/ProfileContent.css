@@ -1,0 +1,215 @@
+.profile {
+    width: 100%;
+}
+.profile .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-content {
+    width: 100%;
+    max-width: 800px;
+    padding: 40px 20px;
+    border-radius: 30px;
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+}
+.profile-title {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.profile-title-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.profile-title-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.profile-title-image.default img {
+    opacity: .5;
+    height: 50px;
+    width: auto;
+}
+.profile-title-image.personal img {
+    opacity: 1;
+}
+.profile-title-username {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.profile-title-age {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    user-select: none;
+}
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.profile-info-recipe-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    gap: 20px;
+}
+.profile-info-recipe-category-item {
+    border-radius: 10px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 20px;
+    width: 100%;
+}
+.profile-info-recipe-category-item-number {
+    font-size: 24px;
+    font-weight: 600;
+    color: #bb6bd3;
+}
+.profile-info-recipe-category-item-text {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.profile-info-user {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
+}
+.profile-info-user-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.profile-info-user-item-title {
+    font-size: 16px;
+    font-weight: 600;
+}
+.profile-info-user-item-value {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.profile-info-user-item-value span {
+    font-size: 16px;
+    font-weight: 300;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+.profile-info-user-item-value button {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.profile-info-user-item-value button img {
+    width: 15px;
+}
+
+
+.btn-quit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn-quit span {
+    border: 1px solid #ee6363;
+    padding: 10px 50px;
+    border-radius: 30px;
+    font-size: 16px;
+    color: #ee6363;
+    cursor: pointer;
+}
+
+.profile-info-settings {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #0002;
+}
+.profile-info-settings-title {
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+}
+.profile-description {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+}
+.profile-description-title {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    padding: 0 5px;
+    font-size: 16px;
+}
+.profile-description-text {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 16px;
+}
+.version {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    user-select: none;
+    font-size: 12px;
+}
+.btn-settings {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    overflow: hidden;
+    cursor: pointer;
+    opacity: .5;
+}
+.btn-settings img {
+    width: 25px;
+    height: 25px;
+}

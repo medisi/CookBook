@@ -1,0 +1,36 @@
+.categories-card-container {
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.categories-card-container span {
+    font-size: 16px;
+}
+.categories-card-container button {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transform: translateX(60px);
+    transition: all .4s ease;
+    border-radius: 5px;
+}
+.categories-card-container button img {
+    width: 20px;
+    height: 20px;
+    opacity: .7;
+}
+.categories-card-container:hover button {
+    transform: translateX(0);
+}

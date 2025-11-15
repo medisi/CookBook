@@ -1,0 +1,66 @@
+.logreg-container {
+    width: 100%;
+    height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.logreg-container form {
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 350px;
+}
+.logreg-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logreg-image img {
+    height: 50px;
+    width: auto;
+    pointer-events: none;
+}
+.logreg-container form h1 {
+    width: 100%;
+    text-align: center;
+    color: #bb6bd3;
+}
+.logreg-input {
+    position: relative;
+    width: 100%;
+}
+.logreg-input input {
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+.logreg-about {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.logreg-about span {
+    font-size: 14px;
+    user-select: none;
+}
+.logreg-about span:nth-child(2) {
+    color: #bb6bd3 !important;
+    cursor: pointer;
+}
+.logreg-about span:nth-child(2):hover {
+    text-decoration: underline;
+}
+.logreg-about-fogget {
+    cursor: pointer;
+    font-size: 14px;
+}
