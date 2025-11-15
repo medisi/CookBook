@@ -2,7 +2,8 @@ import axios from 'axios';
 
 const api = axios.create({
     // baseURL: 'http://localhost:5000/api',
-    baseURL: 'https://cookbook-j58r.onrender.com',
+    // baseURL: 'https://cookbook-j58r.onrender.com',
+    baseURL: 'https://0.0.0.0',
 });
 
 // добавление интерцептора для токена
