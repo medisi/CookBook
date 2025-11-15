@@ -16,5 +16,9 @@ app.use('/api/recipes', require('./routes/recipes'));
 app.use('/api/categories', require('./routes/categories'));
 app.use('/api/profile', require('./routes/profile'));
 
+app.get('/', (req, res) => {
+    res.json({ message: 'Backend is running!', status: 'OK' });
+});
+
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
