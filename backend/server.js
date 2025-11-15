@@ -11,7 +11,7 @@ app.use('/uploads', express.static('uploads'));
 connectDB();
 
 // маршруты
-app.use('/api/auth', require('./routes/auth'));
+app.use('/auth', require('./routes/auth'));
 app.use('/api/recipes', require('./routes/recipes'));
 app.use('/api/categories', require('./routes/categories'));
 app.use('/api/profile', require('./routes/profile'));
