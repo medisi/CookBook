@@ -66,6 +66,7 @@ const ProfileContent = () => {
                 setUserData(response.data);
             } catch (err) {
                 setError(lang === 'ru' ? 'Ошибка загрузки профиля' : 'Error loading profile');
+                navigate('/login');
                 console.error(err);
             } finally {
                 setLoading(false);
