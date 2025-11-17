@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import './App.css';
 import './styles/theme.css';
 import { AuthContext, AuthProvider } from "./context/AuthContext";
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Recipes from "./pages/Recipes";
@@ -15,8 +15,6 @@ import Settings from "./pages/Settings";
 import OpenRecipe from "./pages/OpenRecipe";
 
 function App() {
-  const { user } = useContext(AuthContext);
-  
   return (
     <div className="main">
       <AuthProvider>
@@ -25,7 +23,6 @@ function App() {
             <Route path="/login" element={ <Login /> } />
             <Route path="/register" element={ <Register /> } />
 
-            {/* <Route path="/" element={ user ? <Recipes /> : <Navigate to="/login" /> } /> */}
             <Route path="/" element={
               <ProtectedRoute>
                 <Recipes />
