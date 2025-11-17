@@ -84,7 +84,9 @@ const handleLoginChange = (input) => {
 
     const onSubmit = async (data) => {
         try {
+            console.log('Отправка данных:', data);  // Для отладки
             const response = await api.post('/auth/login', { login: data.login, password: data.password });
+            console.log('Ответ:', response.data);  // Для отладки
             login(response.data.token);
             navigate('/', {
                 state: {
@@ -94,6 +96,7 @@ const handleLoginChange = (input) => {
             });
         } catch (err) {
             // setError(err.response?.data?.message || lang === 'ru' ? 'Ошибка входа' : 'Login error');
+            console.error('Ошибка:', err);  // Подробная ошибка
             const errorMessage = err.response?.data?.message || (lang === 'ru' ? 'Ошибка входа' : 'Login error');
             showAlertMessage(
                 lang === 'ru' ? 'Ошибка' : 'Error',
